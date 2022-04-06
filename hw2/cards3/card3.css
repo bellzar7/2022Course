@@ -12,7 +12,7 @@ body {
     display: flex;
 }
 
-.leftcont , .righttcont{
+.leftcont, .righttcont {
     width: 50%;
     height: 100%;
 
@@ -32,7 +32,7 @@ body {
     align-items: center;
 }
 
-.txt{
+.txt {
     width: 70%;
     height: 100%;
     display: flex;
@@ -40,9 +40,10 @@ body {
     /*align-items: center;*/
 }
 
-.fa-solid{
+.fa-solid {
     font-size: 30px;
-    margin-right: 15px;
+    /*margin-right: 15px;*/
+    /*display: block;*/
     /*width: 30%;*/
     /*height: 100%;*/
     /*display: flex;*/
@@ -50,13 +51,22 @@ body {
     /*align-items: center;*/
 }
 
-.zh{
+.zh {
     margin-top: 15px;
     font-size: 22px;
     color: orange;
 }
-.rd{
+
+.rd {
     margin-top: 10px;
     text-align: start;
     font-size: 17px;
+}
+
+.img{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
