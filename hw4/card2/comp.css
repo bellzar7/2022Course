@@ -36,6 +36,7 @@ body, html {
     height: 500px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav3 {
@@ -51,25 +52,24 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
 }
 
 .pryvud1 {
-    width: 158px;
+    width: 20%;
     height: 80px;
     background: #89ef44;
     position: absolute;
-    left: -197px;
+    left: 0px;
     bottom: 100px;
 }
 
 .pryvud2 {
-    width: 158px;
+    width: 20%;
     height: 80px;
     background: #89ef44;
     position: absolute;
-    bottom: 5px;
-    left: -197px;
+    bottom: 10px;
+    left: 0px;
 }
 
 .right-top {

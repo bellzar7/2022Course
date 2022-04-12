@@ -48,7 +48,8 @@
         background: #89ef44;
         position: absolute;
         bottom: 0;
-        left: 428px;
+        left: unset;
+        right: 0;
     }
 
 
