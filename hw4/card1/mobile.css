@@ -1,0 +1,15 @@
+@media screen and (max-width: 928px){
+    .wrap{
+        flex-direction: column;
+    }
+    .bcd{
+        width: 100%;
+    }
+    .h{
+        width: 100%
+    }
+
+
+
+
+}
