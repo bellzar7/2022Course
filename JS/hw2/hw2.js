@@ -53,7 +53,8 @@ if (day >= 0 && day <= 10) {
 //
 
 
-/*let day = +prompt('choose day of week');
+/*
+let day = +prompt('choose day of week');
 
 switch (day) {
     case (1):
@@ -77,24 +78,29 @@ switch (day) {
     case(7):
         console.log('sanday');
         break;
-}*/
+    default:
+        console.log('try again');
+}
+*/
 
 
 //     - Користувач вводить або має два числа.
 //         Потрібно знайти та вивести максимальне число з тих двох .
 //         Також потрібно врахувати коли введені рівні числа.
 
+/*
 
-/*let a = +prompt('choose first number');
+let a = +prompt('choose first number');
 let b = +prompt('choose second number');
 
-if (a>b && a!==b){
+if (a>b){
     console.log(a);
 }
-else if (a<b && a!==b){
+else if (a<b){
     console.log(b);
 }
 else if (a===b){
     console.log('odynakove');
 }
-else {console.log('try again');}*/
+else {console.log('try again');}
+*/
