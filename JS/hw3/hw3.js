@@ -102,4 +102,11 @@ let products = [
 // </div>
 // Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
 
-document
+
+for (const product of products) {
+    document.write(`<div class="product-card">`);
+        document.write(`<h3 class='product-title'>${product.title}. Price - ${product.price}</h3>`);
+        document.write(`<img src="${product.image}" alt="product image" class="product-image">`)
+    document.write(`</div>`);
+
+}
