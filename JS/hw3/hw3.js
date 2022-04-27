@@ -305,41 +305,43 @@ for (let i = 0; i < 100; i+=3) {
 - знайти книжку/ки з найдовшою назвою
 - знайти книжку/ки які писали 2 автори
 - знайти книжку/ки які писав 1 автор*/
+/*
 let books = [
-    {name: 'asddsa', pages: 321, ganre: ['asddsa', 'asddsaa'], author: 'asddsa'},
-    {name: 'asd', pages: 123, ganre: ['asd', 'asdd', 'asdd'], author: 'asdasd'},
     {name: 'qwe', pages: 213, ganre: 'qwe', author: 'qwe'},
-    {name: 'qweewqqwww', pages: 312, ganre: 'qweewq', authors: ['qweewq', 'qweewqasdds']},
+    {name: 'asd', pages: 123, ganre: 'asd', ganre:'asdd', ganre:'asdd', author: 'asdasd'},
+    {name: 'asddsa', pages: 321, ganre: 'asddsa', ganre:'asddsaa', author: 'asddsa'},
+    {name: 'qweewqqwww', pages: 312, ganre: 'qweewq', author:'qweewq' , author:'qweewqasdds'},
     {name: 'zxc', pages: 132, ganre: 'zxc', author: 'zxc'}
 ];
 
 let maxGanre = books[0].ganre;
 for (let i = 0; i < books.length; i++) {
     if (books[i].ganre.length > maxGanre.length) {
-        maxGanre = books[i]
+        maxGanre = books[i].ganre
     }
 
 }
 console.log(maxGanre);
 
 
-/*let maxName = books[0].name;
+let maxName = books[0].name;
 for (let i = 0; i < books.length; i++) {
     if (books[i].name.length > maxName.length){
         maxName = books[i].name
     }
     
 }
-console.log(maxName);*/
+console.log(maxName);
 
-/*let big = books[0].pages;
+let big = books[0].pages;
 for (let i = 0; i < books.length; i++) {
    if (books[i].pages > big){
        big = books[i]
    }
 
 }
-console.log(big);*/
+console.log(big);
+*/
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------
