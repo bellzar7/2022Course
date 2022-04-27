@@ -298,37 +298,52 @@ for (let i = 0; i < 100; i+=3) {
         document.write(`${i}`);
 }*/
 
-/*
+/*----*//*
 стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 -знайти наібльшу книжку.
 - знайти книжку/ки з найбільшою кількістю жанрів
 - знайти книжку/ки з найдовшою назвою
 - знайти книжку/ки які писали 2 автори
 - знайти книжку/ки які писав 1 автор*/
-/*
 let books = [
-    {name: 'asd', ganre: 'asd', ganre: 'asdd', ganre: 'asdd', author: 'asdasd'},
-    {name: 'asddsa', ganre: 'asddsa', ganre: 'asddsaa', author: 'asddsa'},
-    {name: 'qwe', ganre: 'qwe', author: 'qwe'},
-    {name: 'qweewqqwww', ganre: 'qweewq', author: 'qweewq', author: 'qweewqasdds'},
-    {name: 'zxc', ganre: 'zxc', author: 'zxc'}
+    {name: 'asddsa', pages: 321, ganre: ['asddsa', 'asddsaa'], author: 'asddsa'},
+    {name: 'asd', pages: 123, ganre: ['asd', 'asdd', 'asdd'], author: 'asdasd'},
+    {name: 'qwe', pages: 213, ganre: 'qwe', author: 'qwe'},
+    {name: 'qweewqqwww', pages: 312, ganre: 'qweewq', authors: ['qweewq', 'qweewqasdds']},
+    {name: 'zxc', pages: 132, ganre: 'zxc', author: 'zxc'}
 ];
 
+let maxGanre = books[0].ganre;
 for (let i = 0; i < books.length; i++) {
-    const book = books[i];
-    if (book >= 2) {
-        console.log(book);
+    if (books[i].ganre.length > maxGanre.length) {
+        maxGanre = books[i]
     }
 
-} Я НЕ МОЖУ ЗРОЗУМІТИ ЯК ЦЕ ВИКОНАТИ - знайти книжку/ки з найбільшою кількістю жанрів
-- знайти книжку/ки з найдовшою назвою
-- знайти книжку/ки які писали 2 автори
-- знайти книжку/ки які писав 1 автор
-ПІДКАЖІТЬ, БУДЬ ЛАСКА, ЛОГІКУ ВИКОНАННЯ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-*/
+}
+console.log(maxGanre);
+
+
+/*let maxName = books[0].name;
+for (let i = 0; i < books.length; i++) {
+    if (books[i].name.length > maxName.length){
+        maxName = books[i].name
+    }
+    
+}
+console.log(maxName);*/
+
+/*let big = books[0].pages;
+for (let i = 0; i < books.length; i++) {
+   if (books[i].pages > big){
+       big = books[i]
+   }
+
+}
+console.log(big);*/
+
 
 /*------------------------------------------------------------------------------------------------------------------------------------
-                                                  A D D I T I O N A L 2                                                           */
+                                                  A D D I T I O N A L 2
 
 /*
 За допомогою циклу вивести всю інформацію про користувачів використовуючи шаблон Template 1.1
@@ -1183,11 +1198,11 @@ document.write(`</div>`)
 /*ДОПОМОЖІТЬ ЗРОЗУМІТИ, ВААЖКОО)*/
 // 1. Створити пустий масив та :
 //     a. заповнити його 50 парними числами за допомоги циклу.
-let arr = []
-for (let i = 0; i < 50; i++) {
-
-}
-console.log(arr);
+// let arr = []
+// for (let i = 0; i < 50; i++) {
+//
+// }
+// console.log(arr);
 
 //     b. заповнити його 50 непарними числами за допомоги циклу.
 //     c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
