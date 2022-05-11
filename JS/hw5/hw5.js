@@ -150,20 +150,26 @@ let d = [1,2,3,4,5,6,7];
 a(d);*/
 //
 // -створити функцію, яка приймає масив з 2х об'єктів, та міняє їх місцями.
-/*
-let a = (arr) => {
-    let s = [];
-    for (let i = arr.length - 1; i >= 0; i--) {
-        s.push(arr[i])
-    }
-    return console.log(s);
+/*let a = (arr) => {
+    let s = arr[0];
+    arr[0] = arr[1];
+    arr[1] = s
+    return arr
 };
 
 let r = [
     {id:1, name: 'qwe'},
     {id:2, name:'rty'}
 ];
-a(r);*/
+console.log(a(r));*/
+
+/*let r = [
+    {id:1, name: 'qwe'},
+    {id:2, name:'rty'},
+    {id:3, name:'wert'}
+    ];
+let a = (arr) => [arr[0], arr[1], arr[2]] = [arr[2], arr[1], arr[0]];
+console.log(a(r));*/
 
 
 /*
