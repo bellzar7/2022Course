@@ -133,7 +133,7 @@ for (const elementsByClassNameElement of elementsByClassName) {
                                             A D D I T I O N A L                                                         */
 // написати рекурсивну функцію, яка збирає всі назви класів з файлу rules.html в окремий масив. масив вивести в консоль
 
-/*let a = []
+let a = []
 function foo(start) {
     let children = start.children;
     for (const child of children) {
@@ -143,7 +143,7 @@ function foo(start) {
         }
         foo(child)
     }
-    return a
-}
 
-console.log(foo(document.body));*/
+}
+foo(document.body)
+console.log(a);
