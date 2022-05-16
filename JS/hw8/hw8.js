@@ -139,7 +139,7 @@ function foo(start) {
     for (const child of children) {
         let value = child.classList.value;
         if (value !== '') {
-            a.push(`class = ${value}`)
+            value.split(' ').map(value1 => a.push(value1))
         }
         foo(child)
     }
