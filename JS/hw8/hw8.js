@@ -143,7 +143,6 @@ function foo(start) {
         }
         foo(child)
     }
-
 }
 foo(document.body)
 console.log(a);
