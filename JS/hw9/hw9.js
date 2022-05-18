@@ -259,362 +259,544 @@ for (let i = 0; i < coursesAndDurationArray.length; i++) {
 
 // - Є масив :
 
-//     let usersList = [
-//         {
-//             id: 1,
-//             name: 'Leanne Graham',
-//             username: 'Bret',
-//             email: 'Sincere@april.biz',
-//             address: {
-//                 street: 'Kulas Light',
-//                 suite: 'Apt. 556',
-//                 city: 'Gwenborough',
-//                 zipcode: '92998-3874',
-//                 geo: {
-//                     lat: '-37.3159',
-//                     lng: '81.1496'
-//                 }
-//             },
-//             phone: '1-770-736-8031 x56442',
-//             website: 'hildegard.org',
-//             company: {
-//                 name: 'Romaguera-Crona',
-//                 catchPhrase: 'Multi-layered client-server neural-net',
-//                 bs: 'harness real-time e-markets'
-//             }
-//         },
-//         {
-//             id: 2,
-//             name: 'Ervin Howell',
-//             username: 'Antonette',
-//             email: 'Shanna@melissa.tv',
-//             address: {
-//                 street: 'Victor Plains',
-//                 suite: 'Suite 879',
-//                 city: 'Wisokyburgh',
-//                 zipcode: '90566-7771',
-//                 geo: {
-//                     lat: '-43.9509',
-//                     lng: '-34.4618'
-//                 }
-//             },
-//             phone: '010-692-6593 x09125',
-//             website: 'anastasia.net',
-//             company: {
-//                 name: 'Deckow-Crist',
-//                 catchPhrase: 'Proactive didactic contingency',
-//                 bs: 'synergize scalable supply-chains'
-//             }
-//         },
-//         {
-//             id: 3,
-//             name: 'Clementine Bauch',
-//             username: 'Samantha',
-//             email: 'Nathan@yesenia.net',
-//             address: {
-//                 street: 'Douglas Extension',
-//                 suite: 'Suite 847',
-//                 city: 'McKenziehaven',
-//                 zipcode: '59590-4157',
-//                 geo: {
-//                     lat: '-68.6102',
-//                     lng: '-47.0653'
-//                 }
-//             },
-//             phone: '1-463-123-4447',
-//             website: 'ramiro.info',
-//             company: {
-//                 name: 'Romaguera-Jacobson',
-//                 catchPhrase: 'Face to face bifurcated interface',
-//                 bs: 'e-enable strategic applications'
-//             }
-//         },
-//         {
-//             id: 4,
-//             name: 'Patricia Lebsack',
-//             username: 'Karianne',
-//             email: 'Julianne.OConner@kory.org',
-//             address: {
-//                 street: 'Hoeger Mall',
-//                 suite: 'Apt. 692',
-//                 city: 'South Elvis',
-//                 zipcode: '53919-4257',
-//                 geo: {
-//                     lat: '29.4572',
-//                     lng: '-164.2990'
-//                 }
-//             },
-//             phone: '493-170-9623 x156',
-//             website: 'kale.biz',
-//             company: {
-//                 name: 'Robel-Corkery',
-//                 catchPhrase: 'Multi-tiered zero tolerance productivity',
-//                 bs: 'transition cutting-edge web services'
-//             }
-//         },
-//         {
-//             id: 5,
-//             name: 'Chelsey Dietrich',
-//             username: 'Kamren',
-//             email: 'Lucio_Hettinger@annie.ca',
-//             address: {
-//                 street: 'Skiles Walks',
-//                 suite: 'Suite 351',
-//                 city: 'Roscoeview',
-//                 zipcode: '33263',
-//                 geo: {
-//                     lat: '-31.8129',
-//                     lng: '62.5342'
-//                 }
-//             },
-//             phone: '(254)954-1289',
-//             website: 'demarco.info',
-//             company: {
-//                 name: 'Keebler LLC',
-//                 catchPhrase: 'User-centric fault-tolerant solution',
-//                 bs: 'revolutionize end-to-end systems'
-//             }
-//         },
-//         {
-//             id: 6,
-//             name: 'Mrs. Dennis Schulist',
-//             username: 'Leopoldo_Corkery',
-//             email: 'Karley_Dach@jasper.info',
-//             address: {
-//                 street: 'Norberto Crossing',
-//                 suite: 'Apt. 950',
-//                 city: 'South Christy',
-//                 zipcode: '23505-1337',
-//                 geo: {
-//                     lat: '-71.4197',
-//                     lng: '71.7478'
-//                 }
-//             },
-//             phone: '1-477-935-8478 x6430',
-//             website: 'ola.org',
-//             company: {
-//                 name: 'Considine-Lockman',
-//                 catchPhrase: 'Synchronised bottom-line interface',
-//                 bs: 'e-enable innovative applications'
-//             }
-//         },
-//         {
-//             id: 7,
-//             name: 'Kurtis Weissnat',
-//             username: 'Elwyn.Skiles',
-//             email: 'Telly.Hoeger@billy.biz',
-//             address: {
-//                 street: 'Rex Trail',
-//                 suite: 'Suite 280',
-//                 city: 'Howemouth',
-//                 zipcode: '58804-1099',
-//                 geo: {
-//                     lat: '24.8918',
-//                     lng: '21.8984'
-//                 }
-//             },
-//             phone: '210.067.6132',
-//             website: 'elvis.io',
-//             company: {
-//                 name: 'Johns Group',
-//                 catchPhrase: 'Configurable multimedia task-force',
-//                 bs: 'generate enterprise e-tailers'
-//             }
-//         },
-//         {
-//             id: 8,
-//             name: 'Nicholas Runolfsdottir V',
-//             username: 'Maxime_Nienow',
-//             email: 'Sherwood@rosamond.me',
-//             address: {
-//                 street: 'Ellsworth Summit',
-//                 suite: 'Suite 729',
-//                 city: 'Aliyaview',
-//                 zipcode: '45169',
-//                 geo: {
-//                     lat: '-14.3990',
-//                     lng: '-120.7677'
-//                 }
-//             },
-//             phone: '586.493.6943 x140',
-//             website: 'jacynthe.com',
-//             company: {
-//                 name: 'Abernathy Group',
-//                 catchPhrase: 'Implemented secondary concept',
-//                 bs: 'e-enable extensible e-tailers'
-//             }
-//         },
-//         {
-//             id: 9,
-//             name: 'Glenna Reichert',
-//             username: 'Delphine',
-//             email: 'Chaim_McDermott@dana.io',
-//             address: {
-//                 street: 'Dayna Park',
-//                 suite: 'Suite 449',
-//                 city: 'Bartholomebury',
-//                 zipcode: '76495-3109',
-//                 geo: {
-//                     lat: '24.6463',
-//                     lng: '-168.8889'
-//                 }
-//             },
-//             phone: '(775)976-6794 x41206',
-//             website: 'conrad.com',
-//             company: {
-//                 name: 'Yost and Sons',
-//                 catchPhrase: 'Switchable contextually-based project',
-//                 bs: 'aggregate real-time technologies'
-//             }
-//         },
-//         {
-//             id: 10,
-//             name: 'Clementina DuBuque',
-//             username: 'Moriah.Stanton',
-//             email: 'Rey.Padberg@karina.biz',
-//             address: {
-//                 street: 'Kattie Turnpike',
-//                 suite: 'Suite 198',
-//                 city: 'Lebsackbury',
-//                 zipcode: '31428-2261',
-//                 geo: {
-//                     lat: '-38.2386',
-//                     lng: '57.2232'
-//                 }
-//             },
-//             phone: '024-648-3804',
-//             website: 'ambrose.net',
-//             company: {
-//                 name: 'Hoeger LLC',
-//                 catchPhrase: 'Centralized empowering task-force',
-//                 bs: 'target end-to-end models'
-//             }
-//         }
-//     ];
+/*let usersList = [
+    {
+        id: 1,
+        name: 'Leanne Graham',
+        username: 'Bret',
+        email: 'Sincere@april.biz',
+        address: {
+            street: 'Kulas Light',
+            suite: 'Apt. 556',
+            city: 'Gwenborough',
+            zipcode: '92998-3874',
+            geo: {
+                lat: '-37.3159',
+                lng: '81.1496'
+            }
+        },
+        phone: '1-770-736-8031 x56442',
+        website: 'hildegard.org',
+        company: {
+            name: 'Romaguera-Crona',
+            catchPhrase: 'Multi-layered client-server neural-net',
+            bs: 'harness real-time e-markets'
+        }
+    },
+    {
+        id: 2,
+        name: 'Ervin Howell',
+        username: 'Antonette',
+        email: 'Shanna@melissa.tv',
+        address: {
+            street: 'Victor Plains',
+            suite: 'Suite 879',
+            city: 'Wisokyburgh',
+            zipcode: '90566-7771',
+            geo: {
+                lat: '-43.9509',
+                lng: '-34.4618'
+            }
+        },
+        phone: '010-692-6593 x09125',
+        website: 'anastasia.net',
+        company: {
+            name: 'Deckow-Crist',
+            catchPhrase: 'Proactive didactic contingency',
+            bs: 'synergize scalable supply-chains'
+        }
+    },
+    {
+        id: 3,
+        name: 'Clementine Bauch',
+        username: 'Samantha',
+        email: 'Nathan@yesenia.net',
+        address: {
+            street: 'Douglas Extension',
+            suite: 'Suite 847',
+            city: 'McKenziehaven',
+            zipcode: '59590-4157',
+            geo: {
+                lat: '-68.6102',
+                lng: '-47.0653'
+            }
+        },
+        phone: '1-463-123-4447',
+        website: 'ramiro.info',
+        company: {
+            name: 'Romaguera-Jacobson',
+            catchPhrase: 'Face to face bifurcated interface',
+            bs: 'e-enable strategic applications'
+        }
+    },
+    {
+        id: 4,
+        name: 'Patricia Lebsack',
+        username: 'Karianne',
+        email: 'Julianne.OConner@kory.org',
+        address: {
+            street: 'Hoeger Mall',
+            suite: 'Apt. 692',
+            city: 'South Elvis',
+            zipcode: '53919-4257',
+            geo: {
+                lat: '29.4572',
+                lng: '-164.2990'
+            }
+        },
+        phone: '493-170-9623 x156',
+        website: 'kale.biz',
+        company: {
+            name: 'Robel-Corkery',
+            catchPhrase: 'Multi-tiered zero tolerance productivity',
+            bs: 'transition cutting-edge web services'
+        }
+    },
+    {
+        id: 5,
+        name: 'Chelsey Dietrich',
+        username: 'Kamren',
+        email: 'Lucio_Hettinger@annie.ca',
+        address: {
+            street: 'Skiles Walks',
+            suite: 'Suite 351',
+            city: 'Roscoeview',
+            zipcode: '33263',
+            geo: {
+                lat: '-31.8129',
+                lng: '62.5342'
+            }
+        },
+        phone: '(254)954-1289',
+        website: 'demarco.info',
+        company: {
+            name: 'Keebler LLC',
+            catchPhrase: 'User-centric fault-tolerant solution',
+            bs: 'revolutionize end-to-end systems'
+        }
+    },
+    {
+        id: 6,
+        name: 'Mrs. Dennis Schulist',
+        username: 'Leopoldo_Corkery',
+        email: 'Karley_Dach@jasper.info',
+        address: {
+            street: 'Norberto Crossing',
+            suite: 'Apt. 950',
+            city: 'South Christy',
+            zipcode: '23505-1337',
+            geo: {
+                lat: '-71.4197',
+                lng: '71.7478'
+            }
+        },
+        phone: '1-477-935-8478 x6430',
+        website: 'ola.org',
+        company: {
+            name: 'Considine-Lockman',
+            catchPhrase: 'Synchronised bottom-line interface',
+            bs: 'e-enable innovative applications'
+        }
+    },
+    {
+        id: 7,
+        name: 'Kurtis Weissnat',
+        username: 'Elwyn.Skiles',
+        email: 'Telly.Hoeger@billy.biz',
+        address: {
+            street: 'Rex Trail',
+            suite: 'Suite 280',
+            city: 'Howemouth',
+            zipcode: '58804-1099',
+            geo: {
+                lat: '24.8918',
+                lng: '21.8984'
+            }
+        },
+        phone: '210.067.6132',
+        website: 'elvis.io',
+        company: {
+            name: 'Johns Group',
+            catchPhrase: 'Configurable multimedia task-force',
+            bs: 'generate enterprise e-tailers'
+        }
+    },
+    {
+        id: 8,
+        name: 'Nicholas Runolfsdottir V',
+        username: 'Maxime_Nienow',
+        email: 'Sherwood@rosamond.me',
+        address: {
+            street: 'Ellsworth Summit',
+            suite: 'Suite 729',
+            city: 'Aliyaview',
+            zipcode: '45169',
+            geo: {
+                lat: '-14.3990',
+                lng: '-120.7677'
+            }
+        },
+        phone: '586.493.6943 x140',
+        website: 'jacynthe.com',
+        company: {
+            name: 'Abernathy Group',
+            catchPhrase: 'Implemented secondary concept',
+            bs: 'e-enable extensible e-tailers'
+        }
+    },
+    {
+        id: 9,
+        name: 'Glenna Reichert',
+        username: 'Delphine',
+        email: 'Chaim_McDermott@dana.io',
+        address: {
+            street: 'Dayna Park',
+            suite: 'Suite 449',
+            city: 'Bartholomebury',
+            zipcode: '76495-3109',
+            geo: {
+                lat: '24.6463',
+                lng: '-168.8889'
+            }
+        },
+        phone: '(775)976-6794 x41206',
+        website: 'conrad.com',
+        company: {
+            name: 'Yost and Sons',
+            catchPhrase: 'Switchable contextually-based project',
+            bs: 'aggregate real-time technologies'
+        }
+    },
+    {
+        id: 10,
+        name: 'Clementina DuBuque',
+        username: 'Moriah.Stanton',
+        email: 'Rey.Padberg@karina.biz',
+        address: {
+            street: 'Kattie Turnpike',
+            suite: 'Suite 198',
+            city: 'Lebsackbury',
+            zipcode: '31428-2261',
+            geo: {
+                lat: '-38.2386',
+                lng: '57.2232'
+            }
+        },
+        phone: '024-648-3804',
+        website: 'ambrose.net',
+        company: {
+            name: 'Hoeger LLC',
+            catchPhrase: 'Centralized empowering task-force',
+            bs: 'target end-to-end models'
+        }
+    }
+];
 
 // Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
+function create(arr) {
+    for (const arrElement of arr) {
+
+        const globalWrap = document.createElement('div');
+        document.body.appendChild(globalWrap);
+
+        const hr = document.createElement('hr')
+        hr.style.height = '5px';
+        hr.style.background = 'green';
+        globalWrap.appendChild(hr);
+
+        for (const key in arrElement) {
+            const wrap = document.createElement('div');
+
+            if (typeof arrElement[key] !== "object") {
+                wrap.innerText = key + '-----' + arrElement[key];
+            }
+
+            globalWrap.appendChild(wrap);
+
+            if (typeof arrElement[key] === "object") {
+                for (const nObj in arrElement[key]) {
+                    const wrapObj = document.createElement('div');
+
+                    if (typeof arrElement[key][nObj] !== "object") {
+                        wrapObj.innerText = key + '---' + nObj + '-----' + arrElement[key][nObj];
+                    }
+                        if (typeof arrElement[key][nObj] === "object" ){
+                            for (const geoN in arrElement[key][nObj]) {
+                                const wrapGeo = document.createElement('div');
+                                wrapGeo.innerText = key + '---' + nObj + '---' + geoN + '-----' + arrElement[key][nObj][geoN];
+                                wrapObj.appendChild(wrapGeo);
+                            }
+                        }
+
+                    wrap.appendChild(wrapObj);
+                }
+            }
+        }
+    }
+}
+
+create(usersList);*/
+
 //
 //
 //
 // --------
-//     за допомоги рекурсії перебрати структуру сторінки. зробити об'єкт, всі заголовки покласти в (масив) характеристику headings,всі параграфи покласти в характеристику (масив) paragraphs
-//
-// ------
-//
-//     зробити div contenteditable ввести будь яке ціле слово. та при натисканні табуляції перетворити його на подвійний тег
-// asd ->tab-> <asd></asd>
+//     за допомоги рекурсії перебрати структуру сторінки. зробити об'єкт, всі заголовки покласти в (масив) характеристику
+//     headings,всі параграфи покласти в характеристику (масив) paragraphs
+//     !!!!!!!!!!!перебираю структуру сторінки additional.html!!!!!!!!!!!
+/*let a = {headings: [], paragraphs: []};
 
+function rec(start) {
+    const child = start.children;
+    for (const childElement of child) {
+        if (childElement.tagName.toLowerCase() === 'h1') {  /!*чому якщо тут вписати if (childElement.tagName.toLowerCase() === 'h1'||'h2'||'h3'), то воно буде сприймати лише h1?*!/
+            a["headings"].push(childElement.innerText)
+        } else if (childElement.tagName.toLowerCase() === 'h2') {
+            a["headings"].push(childElement.innerText)
+        } else if (childElement.tagName.toLowerCase() === 'h3') {
+            a["headings"].push(childElement.innerText)
+        }
+        if (childElement.tagName.toLowerCase() === 'p') {
+            a["paragraphs"].push(childElement.innerText)
+        }
+        rec(childElement)
+    }
+}
+
+rec(document.body)
+console.log(a);*/
+// ------
+
+
+
+
+//     зробити div contenteditable ввести будь яке ціле слово. та при натисканні табуляції перетворити його на подвійний тег
+// asd ->tab-> <asd></asd> . !!!!ПОЯСНІТЬ, ПЛИС, УМОВУ!!!!!! створити дів з класом контентедітабле і коли наживати на ТАБ, то його клас ділиться наполовину??????
+
+
+
+
+
+
+
+// - Є масив :
+/*let users = [{
+    name: 'vasya',
+    age: 31,
+    status: false,
+    address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+}, {
+    name: 'petya',
+    age: 30,
+    status: true,
+    address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+}, {
+    name: 'kolya',
+    age: 29,
+    status: true,
+    address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+}, {
+    name: 'olya',
+    age: 28,
+    status: false,
+    address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+}, {
+    name: 'max',
+    age: 30,
+    status: true,
+    address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+}, {
+    name: 'anya',
+    age: 31,
+    status: false,
+    address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+}, {
+    name: 'oleg',
+    age: 28,
+    status: false,
+    address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+}, {
+    name: 'andrey',
+    age: 29,
+    status: true,
+    address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+}, {
+    name: 'masha',
+    age: 30,
+    status: true,
+    address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+}, {
+    name: 'olya',
+    age: 31,
+    status: false,
+    address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+}, {
+    name: 'max',
+    age: 31,
+    status: true,
+    address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+}];*/
 // - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
-//
-// let users = [{
-//     name: 'vasya',
-//     age: 31,
-//     status: false,
-//     address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
-// }, {
-//     name: 'petya',
-//     age: 30,
-//     status: true,
-//     address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
-// }, {
-//     name: 'kolya',
-//     age: 29,
-//     status: true,
-//     address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
-// }, {
-//     name: 'olya',
-//     age: 28,
-//     status: false,
-//     address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
-// }, {
-//     name: 'max',
-//     age: 30,
-//     status: true,
-//     address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
-// }, {
-//     name: 'anya',
-//     age: 31,
-//     status: false,
-//     address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
-// }, {
-//     name: 'oleg',
-//     age: 28,
-//     status: false,
-//     address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
-// }, {
-//     name: 'andrey',
-//     age: 29,
-//     status: true,
-//     address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
-// }, {
-//     name: 'masha',
-//     age: 30,
-//     status: true,
-//     address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
-// }, {
-//     name: 'olya',
-//     age: 31,
-//     status: false,
-//     address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
-// }, {
-//     name: 'max',
-//     age: 31,
-//     status: true,
-//     address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
-// }];
+/*let a = [];
+for (const user of users) {
+    for (const userKey in user) {
+        if (typeof user[userKey] === 'object'){
+            a.push(user[userKey])
+        }
+    }
+}
+console.log(a);*/
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
+// Всі данні в одному блоці.
+/*const a = document.createElement("div");
+document.body.appendChild(a);
+for (const user of users) {
+    const b = document.createElement('div');
+    b.innerText = user.name;
+    a.appendChild(b);
+}*/
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
+// розділивши всі властивості по своїм блокам (div>div*4)
+/*const a = document.createElement('div')
+a.style.display = 'flex';
+a.style.flexWrap = 'wrap'
+a.style.boxSizing = 'border-box'
+document.body.appendChild(a)
+for (const user of users) {
+    const globalWrap = document.createElement('div');
+    globalWrap.style.margin = '20px'
+    a.appendChild(globalWrap);
+    for (const key in user) {
+        const wrap = document.createElement('div');
+
+        if (typeof user[key] !== 'object') {
+            wrap.innerHTML = `${key} --- ${user[key]}`
+            globalWrap.appendChild(wrap)
+        }
+
+        if (typeof user[key] === 'object') {
+            for (const inUserKey in user[key]) {
+                const wrapForWrap = document.createElement('div');
+                wrapForWrap.innerText = key + '---' + inUserKey + '-----' + user[key][inUserKey]
+                globalWrap.appendChild(wrapForWrap)
+
+            }
+        }
+
+    }
+}*/
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
+// розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+/*const a = document.createElement('div')
+a.style.display = 'flex';
+a.style.flexWrap = 'wrap'
+a.style.boxSizing = 'border-box'
+document.body.appendChild(a)
+for (const user of users) {
+    const globalWrap = document.createElement('div');
+    globalWrap.style.margin = '20px'
+    a.appendChild(globalWrap);
+    const wrapForWrap = document.createElement('div');
+    globalWrap.appendChild(wrapForWrap)
+    for (const key in user) {
+        const wrap = document.createElement('div');
+
+        if (typeof user[key] !== 'object') {
+            wrap.innerHTML = `${key} --- ${user[key]}`
+            globalWrap.appendChild(wrap)
+        }
+
+        if (typeof user[key] === 'object') {
+            for (const inUserKey in user[key]) {
+                const f = document.createElement('div');
+                f.innerText = key + '---' + inUserKey + '-----' + user[key][inUserKey]
+                wrapForWrap.appendChild(f)
+            }
+        }
+
+    }
+}*/
+
+
 
 
 
 
 // - є сторінка rules.html. Контентом сторінки є заголовки та параграфи. Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
-//     створити скріпт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, що знаходиться на сторінці.
+//     створити скріпт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того,
+//     що знаходиться на сторінці.
 //     Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
 //
-//
-//
+/*const vstav = document.getElementById('content');
+const ulka = document.createElement('ul');
+vstav.appendChild(ulka);
+function f(start) {
+    const child = start.children;
+    for (const childElement of child) {
+        if (childElement.tagName.toLowerCase() === 'h2'){
+            const lish = document.createElement('li');
+            lish.innerText = childElement.innerText;
+            ulka.appendChild(lish)
+        }
+        f(childElement)
+    }
+}
+f(document.body)*/
+
+
+
+
 // -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
 //     При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
 //     Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
 //
-// let rules = [
-//     {
-//         title: 'Первое правило Бойцовского клуба.',
-//         body: 'Никому не рассказывать о Бойцовском клубе.'
-//     },
-//     {
-//         title: 'Второе правило Бойцовского клуба.',
-//         body: 'Никогда никому не рассказывать о Бойцовском клубе.'
-//     },
-//     {
-//         title: 'Третье правило Бойцовского клуба.',
-//         body: 'В схватке участвуют только двое.'
-//     },
-//     {
-//         title: 'Четвертое правило Бойцовского клуба.',
-//         body: 'Не более одного поединка за один раз.'
-//     },
-//     {
-//         title: 'Пятое правило Бойцовского клуба.',
-//         body: 'Бойцы сражаются без обуви и голые по пояс.'
-//     },
-//     {
-//         title: 'Шестое правило Бойцовского клуба.',
-//         body: 'Поединок продолжается столько, сколько потребуется.'
-//     },
-//     {
-//         title: 'Седьмое правило Бойцовского клуба.',
-//         body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
-//     },
-//     {
-//         title: 'Восьмое и последнее правило Бойцовского клуба.',
-//         body: 'Новичок обязан принять бой.'
-//     },
-//
-// ];
+/*let rules = [
+    {
+        title: 'Первое правило Бойцовского клуба.',
+        body: 'Никому не рассказывать о Бойцовском клубе.'
+    },
+    {
+        title: 'Второе правило Бойцовского клуба.',
+        body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+    },
+    {
+        title: 'Третье правило Бойцовского клуба.',
+        body: 'В схватке участвуют только двое.'
+    },
+    {
+        title: 'Четвертое правило Бойцовского клуба.',
+        body: 'Не более одного поединка за один раз.'
+    },
+    {
+        title: 'Пятое правило Бойцовского клуба.',
+        body: 'Бойцы сражаются без обуви и голые по пояс.'
+    },
+    {
+        title: 'Шестое правило Бойцовского клуба.',
+        body: 'Поединок продолжается столько, сколько потребуется.'
+    },
+    {
+        title: 'Седьмое правило Бойцовского клуба.',
+        body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+    },
+    {
+        title: 'Восьмое и последнее правило Бойцовского клуба.',
+        body: 'Новичок обязан принять бой.'
+    },
 
+];
+const globalWrap = document.createElement("div")
+document.body.appendChild(globalWrap)
+for (const rule of rules) {
+    let wrap = document.createElement('div');
+    globalWrap.appendChild(wrap);
+        const hka = document.createElement('h2');
+        const pka = document.createElement('p');
+        hka.innerText = rule["title"];
+        wrap.appendChild(hka);
+        pka.innerText = rule["body"];
+        wrap.appendChild(pka);
+}*/
 
 
 
