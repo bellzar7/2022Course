@@ -318,7 +318,6 @@ document.body.appendChild(divka);
 addEventListener('click', function (ck) {
     alert( `name - ${ck.target.localName} , class - ${ck.target.className} , id - ${ck.target.id}, height - ${ck.target.offsetHeight} , width - ${ck.target.offsetWidth}`);
 })*/
-// -------------Я ПРАВИЛЬНО ЗРОЗУМІВ УМОВУ? ЧИ ТРЕБА БУЛО ЗВЕРСТАТИ ВЛАСНИЙ ПОП-АП?--------------------------------------
 
 
 
@@ -467,10 +466,51 @@ cityInput.addEventListener('click', function (ck) {
 // при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу (лежащему на одном уровне)
 // НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента и  выводит первого ребенка. и тд.
 //     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним на одном уровне
+/*const wrap = document.createElement('div');
+wrap.classList.add('korova');
+wrap.classList.add('korova1');
+const h2 = document.createElement('h2');
+h2.innerText = 'qweqweqw';
+const pshka = document.createElement('p');
+pshka.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, consequatur!';
+wrap.append(h2,pshka);
+document.body.appendChild(wrap);
+const divka = document.createElement('div');
+divka.style.height = '200px';
+divka.style.width = '200px';
+divka.style.backgroundColor = 'darkgreen';
+divka.id = 'telyatko';
+document.body.appendChild(divka);
 
+
+const but1 = document.createElement('button');
+but1.innerText = 'BACK';
+const but2 = document.createElement('button');
+but2.innerText = 'NEXT';
+document.body.append(but1,but2)
+
+function foo(start) {
+    let childs = start.children
+    but2.addEventListener('click', function (ck) {
+        for (let i = 0; i < childs.length; i++) {
+            console.log(childs[i]);
+        }
+    })
+}
+foo(document.body)*/
+// мозок вскипів після цієї рекурсії і баста, хз як записати перший елемент і щоб його вивело а інші ні
 
 
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
-//
+
 //     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
 // *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+/*
+const pshka = document.createElement('p');
+pshka.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, ut.';
+document.body.appendChild(pshka)
+pshka.addEventListener('click',function (ck) {
+    console.log(ck);
+})*/
+// тут типу коли робить маусдаун потім веде мишою і остання подія маус ап, як тоді взяти виділений сегмент і зробити жирним.
+// Чекаю дуже додатковий урок щоб розібрати ці завдання, бо дуже цікаві, а як робити хз, останні хз взагалі нема розуміння як
