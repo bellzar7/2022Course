@@ -514,3 +514,35 @@ pshka.addEventListener('click',function (ck) {
 })*/
 // тут типу коли робить маусдаун потім веде мишою і остання подія маус ап, як тоді взяти виділений сегмент і зробити жирним.
 // Чекаю дуже додатковий урок щоб розібрати ці завдання, бо дуже цікаві, а як робити хз, останні хз взагалі нема розуміння як
+
+/*
+const div = document.createElement("div");
+
+div.innerText = "Oleksandr";
+
+document.body.appendChild(div);
+const div1 = document.createElement("div");
+
+div1.innerText = "Popov";
+
+document.body.appendChild(div1);
+
+document.querySelector("*").onmouseup = function(e) {
+
+    const selected_text = window.getSelection();
+    const targetSegment = selected_text.toString();
+    let tagText = e.target.innerText;
+
+    if (e.target.localName === "strong"){
+        tagText = e.target.parentElement.innerText;
+    }
+
+    if(targetSegment.length > 0){
+        e.target.innerHTML = `${tagText.slice(0, tagText.indexOf(targetSegment))}<strong>${targetSegment}</strong>${tagText.slice(tagText.indexOf(targetSegment) + targetSegment.length)}`;
+        if (e.target.localName === "strong"){
+            e.target.parentElement.innerHTML = `${tagText.slice(0, tagText.indexOf(targetSegment))}<strong>${targetSegment}</strong>${tagText.slice(tagText.indexOf(targetSegment) + targetSegment.length)}`;
+        }else {
+            e.target.innerHTML = `${tagText.slice(0, tagText.indexOf(targetSegment))}<strong>${targetSegment}</strong>${tagText.slice(tagText.indexOf(targetSegment) + targetSegment.length)}`;
+        }
+    }
+}*/
