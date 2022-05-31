@@ -572,8 +572,19 @@ console.log(a);*/
 
 //     зробити div contenteditable ввести будь яке ціле слово. та при натисканні табуляції перетворити його на подвійний тег
 // asd ->tab-> <asd></asd> . !!!!ПОЯСНІТЬ, ПЛИС, УМОВУ!!!!!! створити дів з класом контентедітабле і коли наживати на ТАБ, то його клас ділиться наполовину??????
+/*const divka = document.createElement('div');
+document.body.appendChild(divka)
+divka.setAttribute('contenteditable', 'true');
+divka.style.height = '100px';
+divka.style.border = '1px solid black'
 
+divka.onkeydown = function (ev) {
+    let name = ev.key
 
+    if (name === 'Tab'){
+        divka.innerText = `<${divka.innerText}></${divka.innerText}>`
+    }
+}*/
 
 
 

@@ -182,26 +182,25 @@ console.log(f(a));*/
 
 
 // - Дано список імен.
-/*   let n1 = 'Harry..Potter'
-let n2 = 'Ron---Whisley'
-let n3 = 'Hermione__Granger'
+ /*  let n1 = '$%612Harry..Potter'
+let n2 = 'Ron---$32 Whisley'
+let n3 = 'Hermione__Granger /131/2'
 // Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
-// let n1 = 'Harry Potter'
-// let n2 = 'Ron Whisley'
-// let n3 = 'Hermione Granger'
-let normalize = function (str) {
-   let q = str.replaceAll('.', ' ')
-       .replaceAll('-',' ')
-       .replaceAll('_', ' ')
-       .replace(' ', '')
-   if (q.includes('  ')){
-      q = q.replace('  ', ' ')
-   }
-   return q
+let normalise = (str) => {
+       let a = str.split('')
+           .map(value => (value >= 'A' && value <= 'Z') || (value >='a' && value <= 'z') ? value : ' ')
+           .join('')
+           .trim()
+    while (a.includes('  ')){
+           a = a.replace('  ', ' ')
+    }
+    return a
 }
-console.log(normalize(n2));*/
 
-//
+console.log(normalise(n1));
+console.log(normalise(n2));
+console.log(normalise(n3));*/
+
 //     - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 /*let a = () => {
     let b = [];
@@ -339,9 +338,9 @@ console.log(validator(c));*/
 console.log(coursesArray.sort((a, b) => b.modules.length - a.modules.length));*/
 //
 // - Напишіть функцію count(str, stringsearch), яка повертає кількість символів stringsearch у рядку str.
-/*    let symb = "о", q = "Астрономия это наука о небесных объектах";
+//     let symb = "о", q = "Астрономия это наука о небесных объектах";
 // document.writeln(count(str, symb)) // 5
-let count = (str, stringsearch) => {
+/*let count = (str, stringsearch) => {
     let a = []
     for (let i = 0; i < str.length; i++) {
         if (str.toLowerCase()[i] === stringsearch){

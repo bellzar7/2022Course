@@ -176,7 +176,6 @@ button.addEventListener('click', function (ck) {
 })*/
 
 
-
 // - Сворити масив не цензцрних слів.
 //     Сворити інпут текстового типу.
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
@@ -205,7 +204,6 @@ but.addEventListener('click', function (ev) {
 );*/
 
 
-
 // - Создайте меню, которое раскрывается/сворачивается при клике
 /*const wrap = document.createElement('div');
 wrap.innerText ='MENU:'
@@ -222,7 +220,6 @@ li2.innerText = 'Fruits';
 wrap.addEventListener('click', function (ck) {
     wrap.classList.toggle('on')
 })*/
-
 
 
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
@@ -259,7 +256,6 @@ for (let i = 0; i < a.length; i++) {
 }*/
 
 
-
 // - Создайте кнопку, при клике на которую, она будет скрывать сама себя.
 /*const bur = document.createElement('button');
 bur.innerText = 'CLICK';
@@ -267,7 +263,6 @@ bur.onclick = function (ck) {
     bur.style.visibility = 'hidden'
 };
 document.body.appendChild(bur);*/
-
 
 
 // - Описати скріпт, котрий, якщо доєднати до будь-якої сторінки дозволить зробити наступне:
@@ -295,7 +290,6 @@ addEventListener('click', function (ck) {
 })*/
 
 
-
 // - Описати скріпт, котрий, якщо доєднати до будь-якої сторінки дозволить зробити наступне:
 //     При лівому кліку миші  зробить popup (спливаючий блок) в якому буде вся інформація про блок.
 //     Інформація яку потрібно вивести в popup: Назва тегу, список класів, список ід, розміри в форматі висота*ширина
@@ -320,20 +314,19 @@ addEventListener('click', function (ck) {
 })*/
 
 
-
 // -- взять массив пользователей
-/*let usersWithAddress = [
-    {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-    {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
-    {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
-    {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
-    {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
-    {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
-    {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
-    {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
-    {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
-    {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-    {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
+let usersWithAddress = [
+    {id: 1, name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+    {id: 2, name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
+    {id: 3, name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
+    {id: 4, name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
+    {id: 5, name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
+    {id: 6, name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
+    {id: 7, name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
+    {id: 8, name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
+    {id: 9, name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
+    {id: 10, name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+    {id: 11, name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
 ];
 // - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать как вместе так и по отдельности.
 // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
@@ -341,7 +334,7 @@ addEventListener('click', function (ck) {
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
 // ---------------------------------------html this task in additional.html-------------------------------------------
-const statusInput = document.querySelector('input[name=status]');
+/*const statusInput = document.querySelector('input[name=status]');
 const ageInput = document.querySelector('input[name=age]');
 const cityInput = document.querySelector('input[name=city]');
 let a ;
@@ -459,6 +452,36 @@ cityInput.addEventListener('click', function (ck) {
         foo(a)
     }
 })*/
+// або простішее!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*const box = document.getElementsByClassName('usersBox')[0];
+box.style.marginTop = '10px'
+const form = document.forms.f;
+
+const us = (users) => {
+    box.innerHTML = '';
+    users.forEach(user => {
+            const divka = document.createElement('div');
+            divka.innerHTML = `${user.status} ${user.age} ${user.address.city}`;
+            box.appendChild(divka);
+        }
+    )
+}
+
+us(usersWithAddress)
+
+form.onchange = () => {
+    let a = usersWithAddress;
+    if (form.status.checked){
+        a = a.filter(value => !value.status)
+    }
+    if (form.age.checked){
+        a = a.filter(value => value.age>=29)
+    }
+    if (form.city.checked){
+        a = a.filter(value => value.address.city === 'Kyiv')
+    }
+    us(a)
+}*/
 
 
 
@@ -505,35 +528,21 @@ foo(document.body)*/
 
 //     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
 // *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
-/*
-const pshka = document.createElement('p');
-pshka.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, ut.';
-document.body.appendChild(pshka)
-pshka.addEventListener('click',function (ck) {
-    console.log(ck);
-})*/
-// тут типу коли робить маусдаун потім веде мишою і остання подія маус ап, як тоді взяти виділений сегмент і зробити жирним.
-// Чекаю дуже додатковий урок щоб розібрати ці завдання, бо дуже цікаві, а як робити хз, останні хз взагалі нема розуміння як
 
 /*
 const div = document.createElement("div");
 
-div.innerText = "Oleksandr";
+div.innerText = "Oleg Panasenko";
 
 document.body.appendChild(div);
-const div1 = document.createElement("div");
-
-div1.innerText = "Popov";
-
-document.body.appendChild(div1);
 
 document.querySelector("*").onmouseup = function(e) {
-
+console.log(e);
     const selected_text = window.getSelection();
     const targetSegment = selected_text.toString();
     let tagText = e.target.innerText;
 
-    if (e.target.localName === "strong"){
+    if (e.target.localName === 'strong'){
         tagText = e.target.parentElement.innerText;
     }
 

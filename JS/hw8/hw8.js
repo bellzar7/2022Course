@@ -146,3 +146,22 @@ function foo(start) {
 }
 foo(document.body)
 console.log(a);*/
+
+// ще один кращий варіант
+
+/*
+function rec(start) {
+    let a = [];
+    for (const child of start) {
+        if (child.children){
+            a.push(...rec(child.children))
+        }
+        a.push(...child.classList)
+    }
+    return a
+}
+
+console.log(rec(document.body.children));
+*/
+
+
