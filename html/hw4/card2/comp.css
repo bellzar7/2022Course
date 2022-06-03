@@ -59,7 +59,7 @@ body, html {
     height: 80px;
     background: #89ef44;
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: 100px;
 }
 
@@ -69,7 +69,7 @@ body, html {
     background: #89ef44;
     position: absolute;
     bottom: 10px;
-    left: 0px;
+    left: 0;
 }
 
 .right-top {

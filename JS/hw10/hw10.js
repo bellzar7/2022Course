@@ -315,7 +315,7 @@ addEventListener('click', function (ck) {
 
 
 // -- взять массив пользователей
-let usersWithAddress = [
+/*let usersWithAddress = [
     {id: 1, name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
     {id: 2, name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
     {id: 3, name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
@@ -327,7 +327,7 @@ let usersWithAddress = [
     {id: 9, name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
     {id: 10, name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
     {id: 11, name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
-];
+];*/
 // - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать как вместе так и по отдельности.
 // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
 // 2й - оставляет старше 29 лет включительно
@@ -525,12 +525,32 @@ foo(document.body)*/
 
 
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+/*let width = 130; // ширина картинки
+let count = 3; // видимое количество изображений
+
+let list = document.querySelector('ul');
+let listElems = document.querySelectorAll('li');
+
+let position = 0; // положение ленты прокрутки
+document.querySelector('.prev').onclick = function() {
+    // сдвиг влево
+    position += width * count;
+    // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+    position = Math.min(position, 0)
+    list.style.marginLeft = position + 'px';
+};
+document.querySelector('.next').onclick = function() {
+    // сдвиг вправо
+    position -= width * count;
+    // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+    position = Math.max(position, -width * (listElems.length - count));
+    list.style.marginLeft = position + 'px';
+};*/
 
 //     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
 // *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
 
-/*
-const div = document.createElement("div");
+/*const div = document.createElement("div");
 
 div.innerText = "Oleg Panasenko";
 
@@ -538,8 +558,8 @@ document.body.appendChild(div);
 
 document.querySelector("*").onmouseup = function(e) {
 console.log(e);
-    const selected_text = window.getSelection();
-    const targetSegment = selected_text.toString();
+
+    const targetSegment = window.getSelection().toString();
     let tagText = e.target.innerText;
 
     if (e.target.localName === 'strong'){
