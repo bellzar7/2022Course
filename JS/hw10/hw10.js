@@ -484,7 +484,6 @@ form.onchange = () => {
 }*/
 
 
-
 // *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
 // при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу (лежащему на одном уровне)
 // НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента и  выводит первого ребенка. и тд.
@@ -549,29 +548,15 @@ document.querySelector('.next').onclick = function() {
 
 //     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
 // *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+/*
+const divka = document.createElement('div');
+divka.innerText = 'Oleg Panasenko';
+document.body.appendChild(divka);
 
-/*const div = document.createElement("div");
+divka.onmouseup = function () {
+    let s = document.getSelection().toString()
+    console.log('lol');
+    divka.innerHTML = divka.innerText.replace(s, `<b>${s}</b>`)
+}
+*/
 
-div.innerText = "Oleg Panasenko";
-
-document.body.appendChild(div);
-
-document.querySelector("*").onmouseup = function(e) {
-console.log(e);
-
-    const targetSegment = window.getSelection().toString();
-    let tagText = e.target.innerText;
-
-    if (e.target.localName === 'strong'){
-        tagText = e.target.parentElement.innerText;
-    }
-
-    if(targetSegment.length > 0){
-        e.target.innerHTML = `${tagText.slice(0, tagText.indexOf(targetSegment))}<strong>${targetSegment}</strong>${tagText.slice(tagText.indexOf(targetSegment) + targetSegment.length)}`;
-        if (e.target.localName === "strong"){
-            e.target.parentElement.innerHTML = `${tagText.slice(0, tagText.indexOf(targetSegment))}<strong>${targetSegment}</strong>${tagText.slice(tagText.indexOf(targetSegment) + targetSegment.length)}`;
-        }else {
-            e.target.innerHTML = `${tagText.slice(0, tagText.indexOf(targetSegment))}<strong>${targetSegment}</strong>${tagText.slice(tagText.indexOf(targetSegment) + targetSegment.length)}`;
-        }
-    }
-}*/
