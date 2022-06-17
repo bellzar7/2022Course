@@ -10,7 +10,7 @@ db.users.updateMany({studying:{$size:1}},{$push:{studying:'java'}})
 // 5) Знайти всіх юзерів номера будинків яких знаходяться в межах 1-20
 db.users.find({$and:[{"address.house":{$gte:1}},{"address.house":{$lte:20}}]})
 // 6) Знайти всіх юзерів в яких назва вулиці містить пробіл
-db.users.find({"address.street":/.* .*!/})
+db.users.find({"address.street":/.* .*!/},{'address.street':/.*\s.*!/})
 // 7) Видалити всіх юзерів в котрих немає поля studying
 db.users.deleteMany({studying:{$exists:0}})
 // 8) Знайти всіх юзерів в котрих в ім'я когось с батьків закінчується на 'na'
