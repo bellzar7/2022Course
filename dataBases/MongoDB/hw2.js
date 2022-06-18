@@ -49,13 +49,19 @@ db.students.aggregate([{
     }
 ])
 // 12) Знайти дітей з не повною сімєю
-db.students.find({parents:{$size:1}})
+db.students.find({
+    $or:[
+        {parents: {$exists: 0}},
+        {parents:{$size:1}}
+
+    ]
+})
 // 13) Знайти батьків які не працюють
 db.students.aggregate([
     {$unwind:'$parents'},
     {$match:{'parents.profession': {$exists: 0}}},
     {$project:{
-            _id:'$name',
+            _id:'$parents.name',
             parent:'$parents'
         }}
 ])
@@ -72,6 +78,8 @@ db.students.updateMany(
 )
 // 16) Знайти дітей які вчаться в початковій школі (до 5 класу) і вивчають фізику ( physics )
 db.students.find({$and:[{class:{$lte:5}},{lessons:'physics'}]})
+або
+db.students.find({class:{$lt:5},lessons:'physics'})
 // 17) Знайти найуспішніший клас
 db.students.aggregate([
     {$group:{
@@ -79,12 +87,20 @@ db.students.aggregate([
             avg:{$avg:'$avgScore'}
         }},
     {$sort:{'avg':-1}},
-    {$limit:1}
+    {$limit:1},
+    {
+        $project:{
+            class:'$_id',
+            avg:1,
+            _id:0
+        }
+    }
 ])
 // ********** Не працюючих батьків влаштувати офіціантами (підказка: гуглимо "arrayFilters")
-db.students.aggregate([
-    {$unwind:'$parents'},
-    {$match:{'parents.profession': {$exists: 0}}},
-    {$set:{'parents.$[element].profession':'waiter'}},
-    { arrayFilters: [{ 'element.profession': {$exists:0}}]}
-])*/
+db.students.find({parents: {$exists: 1}, 'parents.profession': null}) //знайшли студіків в яких хоч один батько не працює
+db.students.updateMany(
+    {parents: {$exists: 1}, 'parents.profession': null}, //вибрали всіх в кого є парентс і і нема профешн у парентса
+    {$set: {'parents.$[item].profession': 'waiter'}},    //$[item] - так звернулись до кожного об'єкту масива парентс до його профешнс і сетнули йому офіціанта
+    {arrayFilters: [{'item.profession': null}]}          //але сетнули не всім, а за допомогою arrayFilters відфільтрували тільки тих, в кого не було взагалі професії і ним додали профешн веітер
+    )
+db.students.find({parents: {$exists: 1}})*/
